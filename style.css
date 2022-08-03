@@ -108,6 +108,11 @@ body {
 
     background-color: var(--verde);
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: hsl(159, 37%, 15%);
 }
 
 .txt-submit {
