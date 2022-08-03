@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&display=swap');
+:root {
+    --verde: hsl(158, 36%, 37%);
+    --creme: hsl(30, 38%, 92%);
+    --preto: hsl(212, 21%, 14%);
+    --cinza: hsl(228, 12%, 48%);
+    --branco: hsl(0, 0%, 100%);
+
+    --francesa: 'Fraunces', serif;
+    --montserrat: 'Montserrat', sans-serif;
+
+    font-size: 14px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--creme);
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    width: 85%;
+    height: 70%;
+    border-radius: 10px;
+    margin: 0 auto;
+    
+}
+
+.img-card-mobile {
+    width: 100%;
+    height: 40%;
+
+    background-image: url(./images/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.inner-card {
+    width: 100%;
+
+    background-color: var(--branco);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
+.categoria,
+.descricao,
+.valor {
+    color: var(--cinza);
+    font-family: var(--montserrat);
+    font-weight: 500;
+}
+
+.titulo,
+.valor-desconto {
+    font-family: var(--francesa);
+    font-weight: 500;
+}
+
+.titulo,
+.valor-desconto {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.categoria {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.titulo {
+    color: var(--preto);
+    margin-right: 1.5rem;
+}
+
+.descricao {
+    line-height: 1.6;
+}
+
+.valores {
+    display: flex;
+    align-items: center;
+}
+
+.valor-desconto {
+    color: var(--verde);
+    margin-right: 1.5rem;
+}
+
+.valor {
+    text-decoration: line-through;
+}
+
+.submit {
+    width: 100%;
+    height: 4rem;
+
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--verde);
+    border-radius: 10px;
+}
+
+.txt-submit {
+    color: var(--branco);
+    font-family: var(--montserrat);
+    font-weight: 700;
+}
+
+.icon-submit {
+    width: 1rem;
+    height: 1rem;
+    margin-right: .7rem;
+}
+
+.titulo,
+.categoria,
+.descricao,
+.valores {
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        width: 40%;
+        height: 63%;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img-card-mobile {
+        display: none;
+    }
+
+    .img-card-desktop {
+        width: 50%;
+        height: 100%;
+
+        background-image: url(./images/image-product-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .inner-card {
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+}
