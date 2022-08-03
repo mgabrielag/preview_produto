@@ -113,6 +113,7 @@ body {
 
 .submit:hover {
     background-color: hsl(159, 37%, 15%);
+    transition-duration: 0.7s;
 }
 
 .txt-submit {
